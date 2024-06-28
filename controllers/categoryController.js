@@ -12,7 +12,7 @@ export const createCategoryController = async (req, res) => {
       });
     }
 
-    //Existing user?
+    //Existing category?
     const querySnapshot = await db
       .collection(process.env.collectionCategory)
       .where('name', '==', name)
