@@ -47,7 +47,7 @@ export const userRegisterController = async (req, res) => {
     }
 
     const userJson = {
-      displayName: displayName,
+      name: displayName,
       phone: phone,
       uid: uid,
       address: '',

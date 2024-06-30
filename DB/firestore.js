@@ -1,6 +1,6 @@
 // import { collection, query, where } from 'firebase/firestore';
-import admin from 'firebase-admin';
-import dotenv from 'dotenv';
+import admin from "firebase-admin";
+import dotenv from "dotenv";
 
 //configure env
 dotenv.config();
@@ -24,9 +24,9 @@ const credential = {
 
 admin.initializeApp({
   credential: admin.credential.cert(credential),
-  storageBucket: process.env.storageBucket
+  storageBucket: process.env.storageBucket,
 });
 
 const db = admin.firestore();
 
-export { db, admin }
+export { db, admin };
